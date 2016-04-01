@@ -1,0 +1,29 @@
+doctype html
+
+html lang="vi"
+  nav
+    a.navitem[href="/"]
+      i.material-icons home
+      |Home
+    a.navitem[href="#"]
+      i.material-icons chrome_reader_mode
+      |Articles
+    a.navitem[href="/profile"]
+      i.material-icons info_outline
+      |Info
+    a.navitem[href="https://github.com/nguyenngoc2505"]
+      i.material-icons code
+      |Github
+  head
+    meta charset="utf-8"
+    title = "Ngọc Nguyễn"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+    = yield(:meta) if content_for(:meta)
+    = stylesheet_link_tag "me", media: "all"
+    = stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons"
+
+  body
+    .header
+      = link_to "Ngọc Nguyễn", root_path, class: "site-title"
+    .content
+      = yield

@@ -1,0 +1,115 @@
+body {
+  padding-top: 50px;
+}
+
+.buttons {
+  font-family: 'Times New Roman', sans-serif;
+}
+
+a {
+  font-weight: bold;
+}
+
+a:hover {
+  color: #1E8449;
+  text-decoration: none;
+}
+
+.navbar-default {
+  font-family: 'Times New Roman', sans-serif;
+  padding-right: 100px;
+}
+
+.navbar-brand {
+  font-size: 32px;
+  padding-left: 100px;
+  text-transform: uppercase;
+}
+
+#title {
+  font-family: 'Times New Roman', sans-serif;
+  padding-top: 100px;
+  height: 600px;
+  background-image: url("http://res.cloudinary.com/ngocnguyen/image/upload/v1459408723/wallhaven-139046_u2bv0i.jpg");
+  background-size: cover; /* fix */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#title > hr {
+  border-width: 4px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  width: 10%;
+}
+
+#title > .inline buttons {
+  padding-top: 50px; 
+}
+
+h1.shadow {
+  text-shadow: 2px 2px 4px black;
+  font-size: 72px;
+  padding-bottom: 30px;
+}
+
+h3.shadow{
+  text-shadow: 2px 2px 4px black;
+  font-size: 28px;
+  padding-top: 30px;
+}
+
+.lead {
+  font-family: 'Times New Roman', sans-serif;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#aboutimg {
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+
+#portfolio {
+  font-family: 'Times New Roman', sans-serif;
+  background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(194,214,229,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(194,214,229,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(194,214,229,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(194,214,229,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(194,214,229,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(194,214,229,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c2d6e5', GradientType=0 );
+}
+
+.description {
+  display: none;
+  height: 220px;
+  opacity: 0.5;
+}
+
+.thumbnail {
+  opacity: 0.8;
+  margin-top: 20px;
+}
+
+#contact {
+  font-family: 'Times New Roman', sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+#footer {
+  font-family: 'Times New Roman', sans-serif;
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
