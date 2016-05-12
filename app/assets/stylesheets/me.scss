@@ -47,7 +47,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.5em;
 }
 
 .header {
@@ -63,9 +62,10 @@ body {
 }
 
 .content {
-  max-width: 720px;
+  max-width: 850px;
   padding: 1em;
   margin: 0 auto;
+  margin-left: 21%;
 }
 
 a {

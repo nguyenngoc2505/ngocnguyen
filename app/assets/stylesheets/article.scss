@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+$body-background: #98C1D9;
+$heading: #2C365E;
+$title: #272635;
+$date: #0C7489;
+
+.article-list {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: whitesmoke;
+}
+
+article {
+  padding: 15px 0;
+  border-top: 1px solid $date;
+}
+
+h1 {
+  color: $heading;
+  font-family: 'Lobster', cursive;
+  font-size: 55px;
+  margin: 0 0 15px;
+}
+
+h2 {
+  color: $title;
+  margin: 0;
+}
+
+.date {
+  color: $date;
+}
+
+body {
+  font-family: 'Arvo', serif;
+}

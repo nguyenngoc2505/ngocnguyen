@@ -10,6 +10,9 @@ gem "turbolinks"
 gem "jbuilder", "~> 2.0"
 gem "sdoc", "~> 0.4.0", group: :doc
 gem "slim"
+gem "devise"
+gem "friendly_id"
+gem "babosa"
 
 group :development, :test do
   gem "pry-rails"
