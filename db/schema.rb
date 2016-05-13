@@ -11,14 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160513070203) do
-
-  create_table "article_images", force: :cascade do |t|
-    t.integer  "article_id"
-    t.string   "file"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20160512075605) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
