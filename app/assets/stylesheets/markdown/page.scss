@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection { background: #FDFB8C; }
+::selection { background: #FDFB8C; }
+
+.CodeMirror-selected {
+  background: #FDFB8C !important;
+}
+
+#article_title {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 5px 20px;
+  font-size: 2.25em;
+  line-height: 1.2;
+  font-weight: 700;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.entry-markdown {
+  float: left;
+  width: 45%;
+  padding: 0 20px;
+  position: relative;
+  border-right: 1px solid #eee;
+  /* height:100vh; */
+}
+
+.entry-preview {
+  float: right;
+  width: 45%;
+  padding: 0 20px;
+  position: relative;
+}
+
+/*Floating header style*/
+.floatingheader {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 400;
+    height: 40px;
+    padding: 10px 3%;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #A0AABF;
+    background: #F7FAFC;
+}
+
+.floatingheader button,.floatingheader .button {
+    display: inline-block;
+    font-size: 10px;
+    min-height: 20px;
+    height: 20px;
+    padding: 3px 4px;
+    vertical-align: top;
+}
+
+.floatingheader button.button-back,.floatingheader .button.button-back {
+    position: relative;
+    top: -2px;
+    left: 3px;
+    display: none;
+    padding: 0 6px 0 3px;
+}
+
+.floatingheader button.button-back:active,.floatingheader .button.button-back:active {
+    box-shadow: none;
+}
+
+.floatingheader button.button-back:before,.floatingheader .button.button-back:before {
+    left: -8px;
+    border-width: 10px 8px 10px 0;
+}

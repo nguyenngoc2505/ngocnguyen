@@ -1,0 +1,37 @@
+doctype html
+
+html
+  head
+    link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css"
+    script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"
+    = javascript_include_tag "application"
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "markdown"
+    = stylesheet_link_tag "markdown", media: "all"
+  body
+    = link_to "Home", root_path
+    section.scrollable.bg-white
+    = form_for @article do |f|
+      = f.text_field :title, placeholder: "page title", id: "article_title"
+      .editor-wrap
+        section.entry-markdown.col-md-6.col-xs-1
+          header.floatingheader.bg-success
+            small Markdown
+          section.entry-markdown-content
+            = f.text_area :content, id: "entry-markdown", autofocus: "true"
+
+        section.entry-preview.active.col-md-6.col-xs-1
+          header.floatingheader
+            small.pull-left Preview
+            small.pull-right
+              span.entry-word-count.js-entry-word-count 0 words
+          section.entry-preview-content
+            .rendered-markdown.markdown-body
+          .clearfix
+      .form-group
+        = f.submit
+
+javascript:
+  function useLocalStorage() {
+    return false;
+  }

@@ -14,4 +14,6 @@ Rails.application.config.assets.precompile += %w[
   profile.css
   profile.js
   article.css
+  markdown.js
+  markdown.css
 ]

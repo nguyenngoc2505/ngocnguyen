@@ -1,0 +1,22 @@
+/*
+ *= require_tree ./markdown
+*/
+
+.toolbar {
+  position: fixed;
+  padding: 20px;
+  width: 65px;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    a {
+      display: block;
+    }
+  }
+}

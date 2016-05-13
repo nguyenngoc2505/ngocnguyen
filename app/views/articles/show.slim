@@ -1,5 +1,12 @@
-= stylesheet_link_tag "article", media: "all"
-section.article-list
-  h1 = @article.title
-  div style="font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; line-height: 1.6; word-wrap: break-word;"
-    = @article.content.html_safe
+link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github.min.css"
+script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"
+= stylesheet_link_tag "markdown", media: "all"
+section.scrollable.wrapper.bg-white
+  .row
+    .col-lg-8
+      section.panel.panel-white
+
+        .panel-body
+          .markdown-body
+            h1 = @article.title
+            = @article.content.html_safe

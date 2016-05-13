@@ -13,6 +13,7 @@ gem "slim"
 gem "devise"
 gem "friendly_id"
 gem "babosa"
+gem 'redcarpet'
 
 group :development, :test do
   gem "pry-rails"

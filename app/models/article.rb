@@ -4,6 +4,8 @@ class Article < ActiveRecord::Base
 
   scope :by_newest, ->{order(id: :desc).first 5}
 
+  validates :title, :content, presence: true
+
   private
   def beautiful_title
     title.to_slug.normalize(transliterations: :vietnamese).to_s

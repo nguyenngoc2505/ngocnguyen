@@ -5,10 +5,9 @@ section.article-list
   h1 Articles
   - @articles.each do |article|
     article
-      .date = article.created_at.strftime("%m/%d/%Y")
+      .date = article.published_at
       h2 = link_to article.title, "/#{article.slug}"
-      p = truncate(article.content, length: 100)
-        = link_to "Read more", "/#{article.slug}"
+      p = truncate(article.content.html_safe, length: 70, escape: false)
       - if current_user
         span style="float: right"
-          = link_to "edit", edit_article_path(article)
+          = link_to "edit", edit_article_path(article.slug)
