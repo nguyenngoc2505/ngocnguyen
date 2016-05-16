@@ -16,4 +16,5 @@ Rails.application.config.assets.precompile += %w[
   article.css
   markdown.js
   markdown.css
+  home.js
 ]
